@@ -1,14 +1,18 @@
 module.exports = {
+  base: '/',
   plugins: [
-    [require('../../src'), {
-      selector: '.theme-default-content',
+    [
+      require('../../src'),
+      {
+        selector: '.theme-default-content',
 
-      options: {
-        bgColor: 'black',
-        zIndex: 10000,
+        options: {
+          bgColor: 'black',
+          zIndex: 10000,
+        },
+        delay: 300,
       },
-      delay: 300,
-    }],
+    ],
     // 'vuepress-plugin-viewer',
   ],
 

@@ -22,7 +22,7 @@
   },
   "scripts": {
     "dev": "vuepress dev dev --temp .temp",
-    "build": "vuepress build dev --dest docs --temp .temp",
+    "build": "vuepress build dev --dest dist --temp .temp",
     "lint": "eslint --fix --ext .js,.vue ."
   },
   "husky": {
