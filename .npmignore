@@ -1,0 +1,9 @@
+.temp/
+.build/
+dev/
+node_modules/
+.editorconfig
+.eslint*
+.git*
+yarn.lock
+*.log
