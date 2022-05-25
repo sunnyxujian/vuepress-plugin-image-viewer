@@ -1,0 +1,54 @@
+{
+  "name": "vuepress-plugin-image-viewer",
+  "version": "1.1.2",
+  "description": "image viewer plugin for VuePress",
+  "main": "src/index.js",
+  "author": "xujian",
+  "license": "MIT",
+  "keywords": [
+    "vuepress",
+    "plugin",
+    "viewer",
+    "image",
+    "zoom"
+  ],
+  "homepage": "https://github.com/sunnyxujian/vuepress-plugin-image-viewer",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sunnyxujian/vuepress-plugin-image-viewer.git"
+  },
+  "bugs": {
+    "url": "https://github.com/sunnyxujian/vuepress-plugin-image-viewer/issues"
+  },
+  "scripts": {
+    "dev": "vuepress dev dev --temp .temp",
+    "build": "vuepress build dev --dest .build --temp .temp",
+    "lint": "eslint --fix --ext .js,.vue .",
+    "publish": "git push origin master:master --tags"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{js,vue}": [
+      "eslint --fix",
+      "git add"
+    ]
+  },
+  "dependencies": {
+    "viewerjs": "^1.10.5",
+    "vuepress-plugin-viewer": "^1.0.0"
+  },
+  "devDependencies": {
+    "eslint": "^5.16.0",
+    "eslint-config-vuepress": "^0.0.2",
+    "husky": "^2.4.0",
+    "lint-staged": "^8.2.0",
+    "vuepress": "^1.0.0"
+  },
+  "peerDependencies": {
+    "vuepress": "^1.0.0"
+  }
+}
