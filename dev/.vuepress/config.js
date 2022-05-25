@@ -1,5 +1,5 @@
 module.exports = {
-  base: '/',
+  base: '/vuepress-plugin-image-viewer/',
   plugins: [
     [
       require('../../src'),
