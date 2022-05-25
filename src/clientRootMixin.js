@@ -9,9 +9,6 @@ export default {
   },
 
   mounted () {
-    setTimeout(() => {
-      this.$vuepress.viewer = new ViewerPlugin()
-      this.$vuepress.viewer.updateDelay()
-    }, 500)
+    this.$vuepress.viewer = new ViewerPlugin()
   },
 }

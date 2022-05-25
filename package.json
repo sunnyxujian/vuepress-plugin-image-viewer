@@ -1,6 +1,6 @@
 {
   "name": "vuepress-plugin-image-viewer",
-  "version": "1.1.2",
+  "version": "1.1.4",
   "description": "image viewer plugin for VuePress",
   "main": "src/index.js",
   "author": "xujian",
@@ -15,7 +15,7 @@
   "homepage": "https://github.com/sunnyxujian/vuepress-plugin-image-viewer",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/sunnyxujian/vuepress-plugin-image-viewer.git"
+    "url": "git@github.com:sunnyxujian/vuepress-plugin-image-viewer.git"
   },
   "bugs": {
     "url": "https://github.com/sunnyxujian/vuepress-plugin-image-viewer/issues"
@@ -23,8 +23,7 @@
   "scripts": {
     "dev": "vuepress dev dev --temp .temp",
     "build": "vuepress build dev --dest .build --temp .temp",
-    "lint": "eslint --fix --ext .js,.vue .",
-    "publish": "git push origin mian:mian --tags"
+    "lint": "eslint --fix --ext .js,.vue ."
   },
   "husky": {
     "hooks": {
