@@ -1,10 +1,11 @@
 module.exports = {
+  title: 'vuepress-plugin-image-viewer',
   base: '/vuepress-plugin-image-viewer/',
   plugins: [
     [
       require('../../src'),
       {
-        selector: '.theme-default-content',
+        selector: '.theme-default-content', // 你想要的插件起作用的页面的class或id
 
         options: {
           bgColor: 'black',
@@ -13,13 +14,13 @@ module.exports = {
         delay: 300,
       },
     ],
-    // 'vuepress-plugin-viewer',
   ],
-
   themeConfig: {
     nav: [
-      { text: 'Home', link: '/' },
-      { text: 'Page', link: '/page.html' },
+      {
+        text: 'GitHub',
+        link: 'https://github.com/sunnyxujian/vuepress-plugin-image-viewer',
+      },
     ],
   },
 }
