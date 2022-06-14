@@ -10,6 +10,7 @@ module.exports = {
         options: {
           bgColor: 'black',
           zIndex: 10000,
+          excludeClass: 'zoom-in',
         },
         delay: 300,
       },

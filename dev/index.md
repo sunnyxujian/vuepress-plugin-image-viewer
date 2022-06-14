@@ -32,4 +32,6 @@ module.exports = {
 ## Picture 2
 ![Picture2](https://xj-1253772569.file.myqcloud.com/581532.jpg)
 ## Picture 3
-![Picture3](https://xj-1253772569.file.myqcloud.com/126876644.jpg)
+<!-- ![Picture3](https://xj-1253772569.file.myqcloud.com/126876644.jpg) -->
+
+<img src="https://xj-1253772569.file.myqcloud.com/126876644.jpg" class="zoom-in"/>

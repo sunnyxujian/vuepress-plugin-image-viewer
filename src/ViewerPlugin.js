@@ -21,6 +21,11 @@ export default class ViewerPlugin {
     if (!element) {
       return console.error('请配置正确的`selector`，例如: `.main .page`。')
     }
+    if (vOptions.excludeClass) {
+      vOptions.filter = (image) => {
+        return !image.classList.contains(vOptions.excludeClass)
+      }
+    }
     this.instance = new Viewer(element, {
       ...vOptions,
       className: 'viewer-plugin-root',
@@ -34,7 +39,7 @@ export default class ViewerPlugin {
   setStyle () {
     const stylee = document.createElement('style')
     stylee.setAttribute('type', 'text/css')
-    stylee.innerHTML = `${vSelector} img {
+    stylee.innerHTML = `${vSelector} img:not(.${vOptions.excludeClass}) {
                           cursor: zoom-in;
                         }`
     document.head.appendChild(stylee)
