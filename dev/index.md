@@ -18,7 +18,7 @@ module.exports = {
       {
         selector: '.theme-default-content', // 你想要的插件起作用的页面的class或id
          options: {
-          excludeClass: 'zoom-in', // 带有这个className的img标签会被排除
+          excludeClass: 'no-zoom', // 带有这个className的img标签会被排除
         },
       },
     ],
@@ -38,4 +38,4 @@ module.exports = {
 > 被排除放大功能的图片
 <!-- ![Picture3](https://xj-1253772569.file.myqcloud.com/126876644.jpg) -->
 
-<img src="https://xj-1253772569.file.myqcloud.com/126876644.jpg" class="zoom-in"/>
+<img src="https://xj-1253772569.file.myqcloud.com/126876644.jpg" class="no-zoom"/>
