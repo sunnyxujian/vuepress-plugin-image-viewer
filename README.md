@@ -21,6 +21,9 @@ module.exports = {
       'vuepress-plugin-image-viewer',
       {
         selector: '.theme-default-content', // 你想要的插件起作用的页面的class或id
+         options: {
+          excludeClass: 'zoom-in', // 带有这个className的img标签会被排除
+        },
       },
     ],
   ]

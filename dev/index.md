@@ -17,6 +17,9 @@ module.exports = {
       'vuepress-plugin-image-viewer',
       {
         selector: '.theme-default-content', // 你想要的插件起作用的页面的class或id
+         options: {
+          excludeClass: 'zoom-in', // 带有这个className的img标签会被排除
+        },
       },
     ],
   ]
@@ -31,7 +34,8 @@ module.exports = {
 ![Picture1](https://xj-1253772569.file.myqcloud.com/img/wallhaven-mini.png)
 ## Picture 2
 ![Picture2](https://xj-1253772569.file.myqcloud.com/581532.jpg)
-## Picture 3
+## Picture 3 
+> 被排除放大功能的图片
 <!-- ![Picture3](https://xj-1253772569.file.myqcloud.com/126876644.jpg) -->
 
 <img src="https://xj-1253772569.file.myqcloud.com/126876644.jpg" class="zoom-in"/>
